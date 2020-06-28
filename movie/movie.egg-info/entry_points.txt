@@ -1,3 +1,0 @@
-[console_scripts]
-movie = movie.app:main
-
