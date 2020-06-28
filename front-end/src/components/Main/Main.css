@@ -1,0 +1,42 @@
+.main-image {
+    height: 200px;
+    width: 400px;
+    align-content: center;
+    border: none;
+    margin-left: 350px;
+    margin-bottom: 20px;
+  }
+  
+.search-container {
+    position: relative;
+    border: 3px solid rgb(47, 199, 47);
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-right: 200px;
+  }
+  
+  .search-text {
+    height: 44px;
+    width: 500px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 20px;
+    border: none;
+  }
+  
+  .search-button {
+    position: absolute; 
+    height: 50px;
+    line-height: 10px;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background: rgb(47, 199, 47);
+    color: white;
+    border: none;
+    width: 20%;
+    font-weight: bold;
+    font-size: 20px;
+  }
