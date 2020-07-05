@@ -1,6 +1,5 @@
-import React, {useState, useEffect, Component} from 'react';
-import {Button, ButtonGroup, Form, FormGroup, Input, Label, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
-import {Link, BrowserRouter, Switch, Route, useHistory, Redirect} from "react-router-dom";
+import React, {useState} from 'react';
+import {Button, Col, Input} from "reactstrap";
 import "./header.css";
 
 const Header = ({query}) => {

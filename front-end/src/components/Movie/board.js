@@ -4,6 +4,7 @@ import MovieItem from "./item";
 import {Container, Jumbotron, Row, Col} from "reactstrap";
 import { useParams } from 'react-router';
 import Header from "./header.js";
+import "./board.css"
 
 const Board = () => {
 
@@ -35,6 +36,7 @@ const Board = () => {
 
     const _renderMovies = () => {
         const movieList = movies.map(movie => {
+            console.log(movie.actor);
             return <MovieItem
                 title={movie.title} 
                 link={movie.link}
@@ -49,16 +51,18 @@ const Board = () => {
     }
 
     return (
-        <div className="MovieBoard">
-        <Header query={query}></Header>
-        <Container>
-            <Jumbotron>
-                <Row xs="3" md="3" lg="3" className="mb-5">
-                    {_renderMovies()}
-                </Row>
-            </Jumbotron>
-        </Container>
-        </div> 
+        <>
+            <Header query={query}></Header>
+            <div className="MovieBoard">
+                <Jumbotron fluid="true">
+                <Container>  
+                        <Row xs="3" md="3" lg="3" className="mb-5">
+                            {_renderMovies()}
+                        </Row>
+                </Container>
+                </Jumbotron>
+            </div>
+        </>
     );  
 };
 
